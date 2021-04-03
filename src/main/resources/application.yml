@@ -45,6 +45,7 @@ spring:
       solicitaColeta:
         exchange: ${MQ_EXCHANGE_SOLICITA_COLETA}
         routingkey: ${MQ_ROUTINGKEY_SOLICITA_COLETA}
+        coletaProcessando: ${MQ_ROUTINGKEY_COLETA_PROCESSANDO}
 
   security:
     user:

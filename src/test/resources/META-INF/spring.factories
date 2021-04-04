@@ -1,2 +1,2 @@
 org.springframework.test.context.TestExecutionListener=\
-  br.com.limpacity.consumer.integration.config.ResetDataBaseListener
+  br.com.limpacity.listener.integration.config.ResetDataBaseListener

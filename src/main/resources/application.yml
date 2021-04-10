@@ -37,10 +37,6 @@ spring:
         queueAguardando: ${MQ_COLETA_AGUARDANDO}
         queueNotificarEmail: ${MQ_COLETA_NOTIFICAR_EMAIL}
         queueNotificarPush: ${MQ_COLETA_NOTIFICAR_PUSH}
-  api:
-    path: ${API_PATH:http://localhost:9001/limpacity/api/v1/coleta}
-
-
   security:
     user:
       name: ${SECURITY-USERNAME}
@@ -50,6 +46,10 @@ security:
     uri: "/**"
     prefix: ${JWT_PREFIX}
     secret: ${JWT_SECRET}
+
+limpacity:
+  apiUrl: ${API_URL:http://localhost:9001/limpacity/api/v1/coleta}
+  apiToken: ${API_TOKEN:TEST}
 
 info:
   app:

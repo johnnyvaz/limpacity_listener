@@ -1,5 +1,6 @@
-package br.com.limpacity.listener.dto;
+package br.com.limpacity.producer.dto;
 
+import br.com.limpacity.listener.dto.SolicitaColetaDTO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;

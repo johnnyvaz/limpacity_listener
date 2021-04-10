@@ -13,11 +13,15 @@ import java.util.Date;
 @NoArgsConstructor
 public class SolicitaColetaDTO {
 
-    private String id;
-
-    private String type;
+    private String material;
 
     private String endereco;
+
+    private String numero;
+
+    private String municipio;
+
+    private String cep;
 
     private Boolean reciclavel;
 
@@ -26,6 +30,4 @@ public class SolicitaColetaDTO {
     private Long quantidade;
 
     private String integrationStatus;
-
-    Date creationDate;
 }

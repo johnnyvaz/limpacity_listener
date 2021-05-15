@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.limpacity</groupId>
-    <artifactId>listener2</artifactId>
+    <artifactId>limpacity_listener</artifactId>
     <version>1.1.0</version>
     <name>LimpaCityListener</name>
-    <description>micro serviço para envio de solicitação de coleta para a fila</description>
+    <description>Este sistema é um consumidor da fila de mensagens, ele fica ouvindo a fila de coleta e inserindo os dados no banco mysql.</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -71,7 +71,10 @@
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.5.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.tradeshift</groupId>
+            <artifactId>spring-rabbitmq-tuning-lib</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -94,11 +97,6 @@
             <version>2.4.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
